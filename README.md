@@ -23,19 +23,17 @@ git clone https://github.com/spack/spack.git
 source "$PWD/spack/share/spack/setup-env.sh"
 ```
 
-In addition to Spack's builtin package repository, the bundles need the
-Met Office package repository and this repository. Add both directly from
-GitHub, in this order:
+In addition to Spack's builtin package repository, the bundles need the Met
+Office package repository and this repository. Add both directly from GitHub:
 ```bash
 spack repo add --name metoffice https://github.com/MetOffice/mo-spack-packages.git
 spack repo add --name psyclone https://github.com/nmnobre/psy-spack-packages.git
-spack repo list
 ```
 
-Spack prepends each repository, so this gives the PSyclone packages precedence
-over the Met Office and builtin packages. Spack manages the Git checkouts; see
-the [Spack repository documentation](https://spack.readthedocs.io/en/latest/repositories.html)
-for how to pin repositories to commits or choose checkout locations.
+Spack manages the Git checkouts; see the
+[Spack repository documentation](https://spack.readthedocs.io/en/latest/repositories.html)
+for how to pin repositories to commits or choose checkout locations. To
+check the configured repositories, run `spack repo list`.
 
 Then configure any Spack settings. Config files can be added to either:
   - ${PWD}/spack/etc/spack/ to affect only this Spack instance but for all users.
