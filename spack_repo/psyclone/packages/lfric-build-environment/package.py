@@ -24,7 +24,7 @@ class LfricBuildEnvironment(BundlePackage):
     depends_on("rose-picker", type="run")
     depends_on("py-jinja2", type="run")
     depends_on("shumlib")
-    depends_on("xios@2252")
+    depends_on("xios@2")
 
     def setup_run_environment(self, env):
         env.set('FC', self.compiler.fc)
