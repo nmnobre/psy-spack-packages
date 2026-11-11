@@ -15,6 +15,7 @@ class LfricBuildEnvironment(BundlePackage):
     depends_on("cxx", type="run")
     depends_on("fortran", type="run")
 
+    depends_on("compiler-wrapper", type="build")
     depends_on("mpi")
     depends_on("netcdf-fortran")
     depends_on("yaxt")
