@@ -94,8 +94,6 @@ toolchains:
 This repository provides a few extra packages (beyond the two bundles above)
 that overlap with the ones in both the main and MetOffice's repo:
 
-- blitz: the MetOffice's version is out-of-date with its base version which
-uses CMake, this repo has a copy of the base version.
 - rose-picker: the repository is password-protected, this repo distributes the
 source in a tar file.
 - fcm: skips perl dependency that can't be compiled in some systems.
