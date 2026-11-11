@@ -21,7 +21,6 @@ class LfricBuildEnvironment(BundlePackage):
     depends_on("yaxt")
     depends_on("pfunit")
     depends_on("py-pyyaml")
-    depends_on("fcm")
     depends_on("py-rose-picker", type="run")
     depends_on("py-jinja2", type="run")
     depends_on("shumlib")

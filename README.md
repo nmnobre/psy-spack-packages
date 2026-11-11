@@ -91,11 +91,6 @@ toolchains:
     when: "%mpi"
 ```
 
-This repository provides a few extra packages (beyond the two bundles above)
-that overlap with the ones in both the main and MetOffice's repo:
-
-- fcm: skips perl dependency that can't be compiled in some systems.
-
 ## Spack Usage
 
 Applications/libraries available on Spack (`spack list`) can be installed with:
